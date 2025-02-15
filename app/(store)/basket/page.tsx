@@ -52,6 +52,8 @@ const BasketPage = () => {
         customerEmail: user?.emailAddresses[0].emailAddress ?? "Unknown",
         clerkUserId: user!.id,
       };
+
+      console.log(metadata);
     } catch (error) {
       console.error(error);
     } finally {
